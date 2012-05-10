@@ -14,8 +14,8 @@ module NewPortfolio
     config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => "bentonrochester@gmail.com",
-  :user_name            => "bentonrochester",
+  :domain               => "www.imbenton.com",
+  :user_name            => "hello@imbenton.com",
   :password             => "thugl1fe",
   :authentication       => :plain,
   :enable_starttls_auto => true
