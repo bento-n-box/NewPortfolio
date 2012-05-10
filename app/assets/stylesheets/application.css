@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "BentonSans";
+    src: url("fonts/BentonSans-Regular.otf") format("opentype");
+    font-family: "BentonSans-Bold";
+    src: url("fonts/BentonSans-Bold.otf") format("opentype");
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background: url("furley_bg.png") repeat fixed;
+}
+
+body{
+	font-family: "BentonSans";	
+}
+
+section{
+	padding-bottom: 200px;
+}
+
+p{ margin: 10px;
+
+}
+#cover{
+	width: 100%;	
+	background: #000;
+	 -webkit-transition: all 0.6s ease-out;
+     -moz-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+       -o-transition: all 0.6s ease-out;
+          transition: all 0.6s ease-out;
+}
+#cover.alt{
+	background: #000;
+	height: 0%;
+}
+
+#cover img{
+	max-width: 90%;	
+	padding: 300px 0 600px 0;
+	background: #000;
+	margin: 0 auto;
+  -webkit-transition: all 0.8s ease-out;
+     -moz-transition: all 0.8s ease-out;
+      -ms-transition: all 0.8s ease-out;
+       -o-transition: all 0.8s ease-out;
+          transition: all 0.8s ease-out;
+}
+
+
+#cover img.alt{
+	max-width: 0%;	
+	padding: 100px 0;
+	background: #000;
+	margin: 0 auto;
+} 
+
+#wrapper{
+	width: 960px;
+	margin: 400px auto 0 auto;
+	position: relative;
+	padding: 0;
+}
+.floatleft{
+	float: left;
+}
+
+.floatright{
+	float: right;
+}
+hgroup{
+	width: 815px;
+	margin: 0 auto;
+}
+
+hgroup h1, hgroup h2{
+	text-indent: -999em;
+	display: none;
+}
+
+#banner{
+	width: 100%;	
+	margin-top: -300px;
+	background: #000;
+	text-align: center;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	top: 180px;
+	padding: 0px 0 5px 0;
+	text-align: center;
+	height: auto;
+  	-webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+    z-index: 999;
+}
+nav.still{
+	position: fixed;
+	top: -80px;
+	background: #000;
+}
+
+
+.navhead ul{
+	width: 815px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	position: relative;
+	width: 100%;
+}
+.navhead li{
+	display: inline;
+	color: #fff;
+	width: 30px;
+	margin: 0px 40px;
+	font-family: "BentonSans-Bold";
+
+}
+.logos{
+	position: relative;
+	bottom: 305px;
+	margin: 0 auto;
+	width: 815px;
+	display: block;
+	 -webkit-transition: all 0.6s ease-out;
+     -moz-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+       -o-transition: all 0.6s ease-out;
+          transition: all 0.6s ease-out;
+
+}
+.logo{
+	position: relative;
+	bottom: -85px;
+	margin: 0 auto;
+	width: 815px;
+	display: block;
+}
+
+
+
+.navhead ul li:nth-child(2){
+	margin-right: 100px;
+}
+
+.navhead ul li:nth-child(3){
+	margin-left: 100px;
+}
+
+/*-------- MY WORK-------- */
+
+#filter {
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+#search{
+	width: 100%;
+	border-bottom: 1px #ccc solid;
+	border-top: 1px #ccc solid;
+}
+
+#search li{
+	display: inline-block;
+	list-style: none;
+	float: left;
+	margin: 10px;
+}
+
+#mywork{
+	width: 960px;
+	margin: 0 auto;
+
+}
+#mywork img{
+	width: 192px;
+	height: 146px;
+}
+
+#mywork #work {
+	margin: 0 auto;
+	width: 960px;
+	text-align: center;
+}
+
+#mywork #work li{
+box-shadow: 0px 1px 1px #000;
+	
+	display: inline-block;
+	list-style: none;
+	float: left;
+	background: #fff;
+	padding: 6px 6px;
+	margin: 9px 18px;
+}
+
+#mywork #work li:hover{
+	box-shadow: 0px 5px 10px #000;
+	margin: 10px 18px 9px 18px;
+	padding: 5px 6px 6px 6px;
+}
+
+#mywork #work li span{
+	position: absolute;
+	margin-left: -192px;
+	margin-top: 116px;
+	background: #000;
+	color: #fff;
+	padding: 5px 10px;
+}
+#search:after, section:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
+	/*-------------------About Me ----------------*/
+	
+
+#myimage{padding: 10px;box-shadow: 0px 5px 10px #000; background: #fff; float: left; margin: 0 auto;}	
+#aboutinfo{float: right;width: 500px;}
+
+.floatright{float: right;}
+.floatleft{float: left;}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+#contactform{ width: 500px; float: left;}
+#contactinfo{ width: 200px; float: right;}
+
+#contactme{ width: 960px;}
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+
+form { float:left; }
+.form-row { float:left; width: 100%; }
+.form-row { float:left; width: 100%; padding-bottom: 20px; font-size: 14px; position:relative; }
+.form-row.error input[type=password],
+.form-row.error input[type=text] { border: 1px solid red; margin: -1px; }
+.form-row.error .error-msg { float:left; clear:both; color: red; font-size: 12px; margin: 10px 0 0 135px; line-height: 1.2; display:block; }
+.form-row .error-msg { display: none; }
+.form-row p { color:#444; }
+.form-row textarea { padding: 10px; line-height: 1.4em; float: left; clear: both; }
+
+.form-row label { float: left; padding: 5px 20px 0 0; color: #666; }
+.form-row input[type=text],
+.form-row input[type=email],
+.form-row input[type=password] { float: left; clear: both; border: 1px solid #333; padding: 5px; line-height: 1; height: 16px;  }
+
+
+#contact form { margin-right: 80px; }
+#contact fieldset { margin-top: 20px; }
+
+#contact .form-row label { color: #acacac; margin-bottom: 20px; font-size: 18px; line-height: 18px; font-weight: bold; padding-top: 0; }
+
+#contact .form-row input[type=text],
+#contact .form-row input[type=email],
+#contact .form-row input[type=password],
+#contact .form-row textarea { width: 520px; padding: 10px; border: 1px solid #acacac;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+
+#contact .form-row input[type=text],
+#contact .form-row input[type=email],
+#contact .form-row input[type=password] { height: 30px; }
+#contact .form-row .btn.active { float: right; }
+
+
+#contact .errors { width: 494px; border: 2px solid #df616d; background: #f0e2e2; color:#a9383a; padding: 18px 22px; line-height: 22px; }
+#contact .errors h3 { font-size: 18px; font-weight: bold; margin: 0; padding:0 ;}
+#contact .errors ul { margin: 0 0 0 1em; padding: 0; font-size: 14px;}

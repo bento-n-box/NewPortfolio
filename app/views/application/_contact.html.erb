@@ -1,0 +1,51 @@
+<section id="contact">
+<%= image_tag("contactme.png") %>
+	    <div id="contactform">
+	    	<form accept-charset="UTF-8" action="/inquiry" class="new_inquiry span-6" id="new_inquiry" method="post">
+	    		
+	    	  <fieldset>
+	    		
+	    	    <div class="form-row">
+	    	      <label for="inquiry_name">Full Name</label>
+	    	      <input id="inquiry_name" name="inquiry[name]" size="30" type="text" value=""/>
+	    	    </div>
+	    		
+	    	    <div class="form-row">
+	    	      <label for="inquiry_email">Email Address</label>
+	    	      <input id="inquiry_email" name="inquiry[email]" size="30" type="text" value=""/>
+	    	    </div>
+	    	    
+	    		
+	    	    <div class="form-row">
+	    	      <label for="inquiry_message">Message</label>
+	    	      <textarea cols="40" id="inquiry_message" name="inquiry[message]" rows="12"></textarea>
+	    	    </div>
+	    				
+	    				<label class="checkbox">
+	    			<input type="checkbox"> Are you a Badass?
+	    		  		</label>
+	    	    
+	    	    <div class="form-row">
+	    	    <%= submit_tag(" SEND ") %>
+	    	     
+	    	    </div>
+	    		
+	    	  </fieldset>
+	    		  </form>
+	    </div>
+  <div class="contactinfo">
+	  <aside>
+	  	<h5>Email me:</h5>
+	  	<a href="mailto:mastermind@bentonrochester.com">Mastermind@bentonrochester.com</a>
+	  </aside>
+  </div>
+  
+  
+<%= form_tag do %>
+
+<%= telephone_field(:user, :phone) %>
+<%= url_field(:user, :homepage) %>
+<%= email_field(:user, :address) %>
+ <%= submit_tag("Submit") %>
+<% end %>
+  </section>

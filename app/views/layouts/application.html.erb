@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Benton Rochester</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'icon.png'  %>
+
+  
+</head>
+<body>
+<%= render :partial => 'header' %>
+
+	<div id="wrapper">
+		<%= render :partial => 'mywork' %>
+		<%= yield %>	
+		
+	<%= render :partial => 'aboutme' %>
+	
+		<%= render :partial => 'contact' %>
+	
+ </div>
+ <p class="center">P.S - You've scrolled <span id="pixels">0</span> Pixels. Oh Yeah!</p>
+
+</body>
+</html>
