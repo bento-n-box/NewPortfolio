@@ -5,7 +5,6 @@
     src: url("fonts/BentonSans-Bold.otf") format("opentype");
 }
 
-
 *{
 	margin: 0;
 	padding: 0;
@@ -17,9 +16,9 @@ html{
 body{
 	font-family: "BentonSans";	}
 
-section{padding-top: 200px;}
+section{padding-top: 100px;}
 
-.header{ padding-top: 00px;}
+.header{ margin-bottom:  50px;}
 li {list-style: none;}
 p{ margin: 0px;}
 
@@ -279,7 +278,8 @@ form { float:left; }
 .form-row input[type=text],
 .form-row input[type=email],
 .form-row input[type=password] { float: left; clear: both; border: 1px solid #333; padding: 5px; line-height: 1; height: 16px;  }
-
+input{ font-family: bentonsans;
+font-size: 30px;}
 
 #contact form { margin-right: 80px; }
 #contact fieldset { margin-top: 20px; }
@@ -298,12 +298,25 @@ form { float:left; }
 #contact .form-row input[type=text],
 #contact .form-row input[type=email],
 #contact .form-row input[type=password] { height: 30px; }
-#contact .form-row .btn.active { float: right; }
+#contact .form-row .btn.active { float: right;  }
 
 
 #contact .errors { width: 494px; border: 2px solid #df616d; background: #f0e2e2; color:#a9383a; padding: 18px 22px; line-height: 22px; }
 #contact .errors h3 { font-size: 18px; font-weight: bold; margin: 0; padding:0 ;}
 #contact .errors ul { margin: 0 0 0 1em; padding: 0; font-size: 14px;}
+.sendemail{ padding: 20px 30px; color: #000; background: #EBFF37;  font-weight: bold; font-size: 22px;-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+-webkit-box-shadow: 0px 1px 3px #999;
+-moz-box-shadow: 0px 1px 3px #999;
+box-shadow: 0px 1px 3px #999;} 
+
+.sendemail{-webkit-box-shadow: 0px 0px 3px #999;
+-moz-box-shadow: 0px 0px 3px #999;
+box-shadow: 0px 0px 3px #999;}
 
 
 /*------Foursquare Checking ----*/
