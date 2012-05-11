@@ -15,20 +15,20 @@ html{
 }
 
 body{
-	font-family: "BentonSans";	
-}
+	font-family: "BentonSans";	}
 
-section{
-	padding-bottom: 200px;
-}
+section{padding-top: 200px;}
 
-p{ margin: 10px;
+.header{ padding-top: 00px;}
+li {list-style: none;}
+p{ margin: 0px;}
 
-}
+a {text-decoration: none; color: #000; }
+
 #cover{
 	width: 100%;	
 	background: #000;
-	background: url("dark_Tire.png") repeat fixed;
+	background: url("dvsup.png") repeat fixed;
 	 -webkit-transition: all 0.6s ease-out;
      -moz-transition: all 0.6s ease-out;
       -ms-transition: all 0.6s ease-out;
@@ -55,7 +55,7 @@ p{ margin: 10px;
 
 
 #cover img.alt{
-background: url("dark_Tire.png") repeat fixed;	
+background: url("dvsup.png") repeat fixed;	
 	max-width: 0%;	
 	opacity: 100%;
 	padding: 100px 0;
@@ -95,11 +95,10 @@ hgroup h1, hgroup h2{
 nav {
 	position: fixed;
 	width: 100%;
-	top: 180px;
+	top: 173px;
 	padding: 0px 0 5px 0;
 	text-align: center;
 	height: auto;
-	
   	-webkit-transition: all 0.8s ease-out;
     -moz-transition: all 0.8s ease-out;
     -ms-transition: all 0.8s ease-out;
@@ -109,8 +108,9 @@ nav {
 }
 nav.still{
 	position: fixed;
-	top: -80px;
-		background: url("dark_Tire.png") repeat fixed;	
+	top: -980px;
+	padding-top: 900px;
+		background: url("dvsup.png") repeat fixed;	
 }
 
 
@@ -128,6 +128,9 @@ nav.still{
 	margin: 0px 40px;
 	font-family: "BentonSans-Bold";
 
+}
+.navhead li a{
+	color: #fff;
 }
 .logos{
 	position: relative;
@@ -185,7 +188,7 @@ nav.still{
 	margin: 0 auto;
 
 }
-#mywork img{
+#mywork #work img{
 	width: 192px;
 	height: 146px;
 }
@@ -196,9 +199,8 @@ nav.still{
 	text-align: center;
 }
 
-#mywork #work li{
-box-shadow: 0px 1px 1px #000;
-	
+#mywork #work article{
+	box-shadow: 0px 1px 1px #000;
 	display: inline-block;
 	list-style: none;
 	float: left;
@@ -207,36 +209,56 @@ box-shadow: 0px 1px 1px #000;
 	margin: 9px 18px;
 }
 
-#mywork #work li:hover{
+#mywork #work article:hover{
 	box-shadow: 0px 5px 10px #000;
-	margin: 10px 18px 9px 18px;
-	padding: 5px 6px 6px 6px;
+	
 }
 
-#mywork #work li span{
+#mywork #work article span{
 	position: absolute;
-	margin-left: -192px;
-	margin-top: 116px;
+	margin-left: -95px;
+	margin-top: -50px;
 	background: #000;
 	color: #fff;
 	padding: 5px 10px;
 }
-#search:after, section:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
+
+#mywork #work article h5{
+	color: #959595;
+}
+#aboutme ul{
+	width: 30%;
+	margin-top: 100px;
+	float: left;
+	text-align: left;
+
+}
+
+#search:after, section:after, #lowerabout:after, #aboutinfo:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
 	/*-------------------About Me ----------------*/
 	
 
-#myimage{padding: 10px;box-shadow: 0px 5px 10px #000; background: #fff; float: left; margin: 0 auto;}	
-#aboutinfo{float: right;width: 500px;}
+#myimage{padding: 10px;box-shadow: 0px 5px 10px #000; background: #fff; float: left; margin: 0 auto;}
+#nextabout{
+	padding-top: 100px;
+	
+}	
+#aboutinfo, #wordboard {float: right; width: 500px;}
 
-.floatright{float: right;}
-.floatleft{float: left;}
+#aboutmore {float: left; width: 300px;}
+
+
 
 /* =============================================================================
    Forms
    ========================================================================== */
 
 #contactform{ width: 500px; float: left;}
-#contactinfo{ width: 200px; float: right;}
+.contactinfo{ width: 300px; float: right; }
+.contactinfo a{ padding-bottom: 20px }
+.contactinfo h2{ padding-top: 10px 0; font-weight: bold; text-decoration: underline; text-transform: uppercase;}
+.social{margin: 20px 0;}
+.social li{ margin: 5px 10px;}
 
 #contactme{ width: 960px;}
 form { margin: 0; }
@@ -282,3 +304,41 @@ form { float:left; }
 #contact .errors { width: 494px; border: 2px solid #df616d; background: #f0e2e2; color:#a9383a; padding: 18px 22px; line-height: 22px; }
 #contact .errors h3 { font-size: 18px; font-weight: bold; margin: 0; padding:0 ;}
 #contact .errors ul { margin: 0 0 0 1em; padding: 0; font-size: 14px;}
+
+
+/*------Foursquare Checking ----*/
+.rss-item a:before{
+	content: url("blue-dot.png");
+}
+#checkin{
+width: 300px;
+text-decoration: underline;
+padding-bottom: 10px;
+}
+
+.pod-play {
+   _width:12em;
+   margin: 0 0.2em; padding: 0.1em 0; _padding:0;
+   
+   white-space:nowrap;
+   text-decoration: none;
+   vertical-align:middle;
+   background: #fb6;
+   color: black;
+   }
+   .rss-item {
+   list-style: none;
+   padding: 20px 0;
+
+   }
+.pod-play em {
+   _width:1em; _cursor:hand;
+   font-style: normal;
+   margin:0; padding: 0.1em 0.5em;
+   background: white;
+   color: #222;  
+   }
+.pod-play span {
+   _width:1em; _cursor:hand;
+   margin:0; padding: 0.1em 0.5em 0.1em 0.3em;
+   }
