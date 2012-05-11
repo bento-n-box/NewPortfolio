@@ -62,9 +62,9 @@ background: url("dvsup.png") repeat fixed;
 
 #wrapper{
 	width: 960px;
-	margin: 400px auto 0 auto;
+	margin: 0px auto 0 auto;
 	position: relative;
-	padding: 0;
+	padding-top: 400px;
 }
 .floatleft{
 	float: left;
@@ -126,7 +126,7 @@ nav.still{
 	color: #fff;
 	width: 30px;
 	margin: 0px 40px;
-	opacity: 100%;
+	
 	font-family: "BentonSans-Bold";
 	
 }
@@ -143,8 +143,8 @@ nav.still{
 }
 .navhead li a{
 	font-family: "BentonSans-Bold";
-	visibility: hidden;
 	
+	color: #fff;
 
 	}
 

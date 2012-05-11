@@ -18,6 +18,7 @@ $window.bind('scroll', function(){
 				$('.logo').removeClass("alt");
 				$('nav').removeClass("still");
 				$('.navhead').removeClass("still");
+				
 	
 			}		
 		
