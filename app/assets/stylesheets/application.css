@@ -16,14 +16,15 @@ html{
 body, p, li, a{
 	font-family: "BentonSans", helvetica, arial;	}
 
-section{margin-top: 100px;}
+section{padding-top: 100px;}
 
 .header{ margin-bottom:  50px;}
 li {list-style: none;}
 p{ margin: 0px;}
 
-a {text-decoration: none; color: #000; }
+a {text-decoration: none; color: #fff; }
 
+}
 #cover{
 	width: 100%;	
 	background: #000;
@@ -39,8 +40,7 @@ a {text-decoration: none; color: #000; }
 	height: 0%;
 }
 
-#cover img{
-	
+#cover img{	
 	max-width: 90%;	
 	padding: 300px 0 600px 0;
 	margin: 0 auto;
@@ -55,7 +55,6 @@ a {text-decoration: none; color: #000; }
 #cover img.alt{
 background: url("dvsup.png") repeat fixed;	
 	max-width: 0%;	
-
 	padding: 100px 0;
 	margin: 0 auto;
 } 
@@ -88,6 +87,7 @@ hgroup h1, hgroup h2{
 	margin-top: -300px;
 	background: #000;
 	text-align: center;
+	background: url("dvsup.png") repeat fixed;	
 }
 
 nav {
@@ -126,16 +126,12 @@ nav.still{
 	color: #fff;
 	width: 30px;
 	margin: 0px 40px;
-	
 	font-family: "BentonSans-Bold";
 	
 }
 .navhead.still li a{
 	color: #fff;
-	
-	visibility: visible;
-	font-family: "BentonSans-Bold";
-	  -webkit-transition: all 0.8s ease-out;
+	-webkit-transition: all 0.8s ease-out;
     -moz-transition: all 0.8s ease-out;
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
@@ -144,8 +140,6 @@ nav.still{
 .navhead li a{
 	font-family: "BentonSans-Bold";
 	
-	color: #fff;
-
 	}
 
 .logos{
@@ -271,7 +265,7 @@ nav.still{
 
 #contactform{ width: 500px; float: left;}
 .contactinfo{ width: 300px; float: right; }
-.contactinfo a{ padding-bottom: 20px }
+.contactinfo a{ padding-bottom: 20px; color: #b5d033; text-decoration: underline;}
 .contactinfo h2{ padding-top: 10px 0; font-weight: bold; text-decoration: underline; text-transform: uppercase;}
 .social{margin: 20px 0;}
 .social li{ margin: 5px 10px;}

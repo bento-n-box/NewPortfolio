@@ -1,5 +1,5 @@
-var $window = $(window);	
-$window.bind('scroll', function(){ 	
+		var $window = $(window);	
+		$window.bind('scroll', function(){ 	
 		var pos = $(window).scrollTop();	
 		
 			if (pos > 2){
@@ -8,8 +8,6 @@ $window.bind('scroll', function(){
 				$('.logo').addClass("alt");
 				$('nav').addClass("still");
 				$('.navhead').addClass("still");
-				
-								
 			}	
 			if (pos < 1){
 				$('nav').removeClass("alt");	
@@ -18,16 +16,7 @@ $window.bind('scroll', function(){
 				$('.logo').removeClass("alt");
 				$('nav').removeClass("still");
 				$('.navhead').removeClass("still");
-				
-	
 			}		
-		
-				
-		$('#pixels').html(pos)
-
-		
-	
-	
 	});	
 	
 
