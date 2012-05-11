@@ -13,10 +13,10 @@ html{
 	background: url("furley_bg.png") repeat fixed;
 }
 
-body{
-	font-family: "BentonSans";	}
+body, p, li, a{
+	font-family: "BentonSans", helvetica, arial;	}
 
-section{padding-top: 100px;}
+section{margin-top: 100px;}
 
 .header{ margin-bottom:  50px;}
 li {list-style: none;}
@@ -44,7 +44,6 @@ a {text-decoration: none; color: #000; }
 	max-width: 90%;	
 	padding: 300px 0 600px 0;
 	margin: 0 auto;
-			opacity: 100%;
   -webkit-transition: all 0.8s ease-out;
      -moz-transition: all 0.8s ease-out;
       -ms-transition: all 0.8s ease-out;
@@ -56,7 +55,7 @@ a {text-decoration: none; color: #000; }
 #cover img.alt{
 background: url("dvsup.png") repeat fixed;	
 	max-width: 0%;	
-	opacity: 100%;
+
 	padding: 100px 0;
 	margin: 0 auto;
 } 
@@ -104,12 +103,14 @@ nav {
     -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out;
     z-index: 999;
+  
 }
 nav.still{
 	position: fixed;
 	top: -980px;
 	padding-top: 900px;
-		background: url("dvsup.png") repeat fixed;	
+	background: url("dvsup.png") repeat fixed;	
+	
 }
 
 
@@ -125,12 +126,28 @@ nav.still{
 	color: #fff;
 	width: 30px;
 	margin: 0px 40px;
+	opacity: 100%;
 	font-family: "BentonSans-Bold";
-
+	
+}
+.navhead.still li a{
+	color: #fff;
+	
+	visibility: visible;
+	font-family: "BentonSans-Bold";
+	  -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
 }
 .navhead li a{
-	color: #fff;
-}
+	font-family: "BentonSans-Bold";
+	visibility: hidden;
+	
+
+	}
+
 .logos{
 	position: relative;
 	bottom: 305px;

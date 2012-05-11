@@ -7,6 +7,7 @@ $window.bind('scroll', function(){
 				$('#cover img').addClass("alt");
 				$('.logo').addClass("alt");
 				$('nav').addClass("still");
+				$('.navhead').addClass("still");
 				
 								
 			}	
@@ -16,7 +17,8 @@ $window.bind('scroll', function(){
 				$('#cover img').removeClass("alt");			
 				$('.logo').removeClass("alt");
 				$('nav').removeClass("still");
-				
+				$('.navhead').removeClass("still");
+	
 			}		
 		
 				
