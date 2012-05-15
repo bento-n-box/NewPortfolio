@@ -220,7 +220,7 @@ dt { margin-right: 0px; }
 #mywork #work img{
 	width: 295px;
 	height: 185px;
-	opacity: .5;
+	opacity: 1;
 }
 
 #mywork #work img:hover{
@@ -266,15 +266,27 @@ dt { margin-right: 0px; }
 
 #search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
 	/*-------------------About Me ----------------*/
+#about1 img{
+	height: 50px;
+	margin: 10px;
+	text-align: center;
+	padding: 5px 0;
+}	
+
+#about1 img:hover{
 	
+	background: #fff;
+	webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+}
+
 
 #myimage{padding: 10px;	box-shadow: 0px 1px 1px #000; background: #fff; float: left; margin: 0 auto;}
-#nextabout{
-	padding-top: 100px;
-}	
-#aboutinfo{float: right; width: 500px;}
 
-#aboutmore {float: left; width: 300px;}
+#aboutinfo{float: right; width: 500px;}
+#lowerabout h2{ text-align: center;}
+
 #aboutme ul{
 	width: 30%;
 	margin-top: 100px;
@@ -282,7 +294,7 @@ dt { margin-right: 0px; }
 	text-align: left;
 }
 
-#about1{float: left; width: 300px; }
+#about1{float: left; width: 400px; }
 
 #about2{float: right; width: 500px;}
 
