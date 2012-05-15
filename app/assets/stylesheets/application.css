@@ -16,15 +16,15 @@ html{
 body, p, li, a{
 	font-family: "BentonSans", helvetica, arial;	}
 
-section{padding-top: 100px;}
+
+section {padding: 100px 0 0 0; }
 
 .header{ margin-bottom:  50px;}
 li {list-style: none;}
-p{ margin: 0px;}
+p{ margin: 10px 0;}
 
 a {text-decoration: none; color: #fff; }
 
-}
 #cover{
 	width: 100%;	
 	background: #000;
@@ -34,6 +34,8 @@ a {text-decoration: none; color: #fff; }
       -ms-transition: all 0.6s ease-out;
        -o-transition: all 0.6s ease-out;
           transition: all 0.6s ease-out;
+          z-index: 999;
+          position: relative;
 }
 #cover.alt{
 	
@@ -42,13 +44,15 @@ a {text-decoration: none; color: #fff; }
 
 #cover img{	
 	max-width: 90%;	
-	padding: 300px 0 600px 0;
+	padding: 330px 0 100px 00px;
 	margin: 0 auto;
   -webkit-transition: all 0.8s ease-out;
      -moz-transition: all 0.8s ease-out;
       -ms-transition: all 0.8s ease-out;
        -o-transition: all 0.8s ease-out;
           transition: all 0.8s ease-out;
+          z-index: 999;
+          position:  static;
 }
 
 
@@ -59,12 +63,15 @@ background: url("dvsup.png") repeat fixed;
 	margin: 0 auto;
 } 
 
+
+
 #wrapper{
 	width: 960px;
 	margin: 0px auto 0 auto;
 	position: relative;
-	padding-top: 400px;
+	padding-top: 200px;
 }
+
 .floatleft{
 	float: left;
 }
@@ -82,12 +89,16 @@ hgroup h1, hgroup h2{
 	display: none;
 }
 
+
 #banner{
-	width: 100%;	
-	margin-top: -300px;
+width: 100%;	
+	margin: -300px 0 0 0;
+	padding-bottom: 0;
 	background: #000;
 	text-align: center;
 	background: url("dvsup.png") repeat fixed;	
+	
+
 }
 
 nav {
@@ -123,7 +134,6 @@ nav.still{
 }
 .navhead li{
 	display: inline;
-	color: #fff;
 	width: 30px;
 	margin: 0px 40px;
 	font-family: "BentonSans-Bold";
@@ -136,10 +146,12 @@ nav.still{
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out;
+    opacity: 1;
+   
 }
 .navhead li a{
 	font-family: "BentonSans-Bold";
-	
+	opacity: 0;
 	}
 
 .logos{
@@ -175,56 +187,68 @@ nav.still{
 
 /*-------- MY WORK-------- */
 
-#filter {
-	padding-bottom: 20px;
-	width: 100%;
-}
 
-#search{
+
+
+#filter{
 	width: 100%;
 	border-bottom: 1px #ccc solid;
 	border-top: 1px #ccc solid;
 }
 
-#search li{
+#filter li{
 	display: inline-block;
 	list-style: none;
 	float: left;
-	margin: 10px;
+	margin: 30px;
+	
 }
+/* Filter */
+dl { margin-bottom: 3em; color: #777; }
+dt, dd { float: left; }
+dt { margin-right: 0px; }
+.filter li { float: left; }
+.filter li:last-child:after { content: ""; }
+.filter a { color: #777; text-decoration: none; padding: 5px 12px; }
+.filter a:hover, .current a { background: #2c3f4d;  color: #b5d033; }
 
 #mywork{
 	width: 960px;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 
 }
 #mywork #work img{
-	width: 192px;
-	height: 146px;
+	width: 295px;
+	height: 185px;
+	opacity: .5;
 }
 
+#mywork #work img:hover{
+	opacity: 1;
+	
+}
 #mywork #work {
-	margin: 0 auto;
+	margin: 30px auto 60px;
 	width: 960px;
 	text-align: center;
 }
 
-#mywork #work article{
+#mywork #work li{
 	box-shadow: 0px 1px 1px #000;
 	display: inline-block;
 	list-style: none;
 	float: left;
 	background: #fff;
-	padding: 6px 6px;
-	margin: 9px 18px;
+	padding: 0px 0px 5px 0;
+	margin: 20px 11px 9px 11px;
 }
 
-#mywork #work article:hover{
+#mywork #work li:hover{
 	box-shadow: 0px 5px 10px #000;
 	
 }
 
-#mywork #work article span{
+#mywork #work li span{
 	position: absolute;
 	margin-left: -95px;
 	margin-top: -50px;
@@ -233,30 +257,34 @@ nav.still{
 	padding: 5px 10px;
 }
 
-#mywork #work article h5{
+#mywork #work li h5{
 	color: #959595;
 }
-#aboutme ul{
-	width: 30%;
-	margin-top: 100px;
-	float: left;
-	text-align: left;
-
+#mywork #work li h3{
+	color: #000;
 }
 
-#search:after, section:after, #lowerabout:after, #aboutinfo:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
+#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
 	/*-------------------About Me ----------------*/
 	
 
 #myimage{padding: 10px;	box-shadow: 0px 1px 1px #000; background: #fff; float: left; margin: 0 auto;}
 #nextabout{
 	padding-top: 100px;
-	
 }	
-#aboutinfo, #wordboard {float: right; width: 500px;}
+#aboutinfo{float: right; width: 500px;}
 
 #aboutmore {float: left; width: 300px;}
+#aboutme ul{
+	width: 30%;
+	margin-top: 100px;
+	float: left;
+	text-align: left;
+}
 
+#about1{float: left; width: 300px; }
+
+#about2{float: right; width: 500px;}
 
 
 /* =============================================================================
