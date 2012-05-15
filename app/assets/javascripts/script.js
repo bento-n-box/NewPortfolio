@@ -1,5 +1,7 @@
 $(document).ready(function(){
-
+ $(function () {
+$("li.featured a").click();
+});
 	
 	// Initialize prettyPhoto plugin
 	$(".portfolio a[rel^='prettyPhoto']").prettyPhoto({
@@ -53,4 +55,5 @@ $(document).ready(function(){
 		// Prevent the browser jump to the link anchor
 		e.preventDefault();
 	})
+	
 });

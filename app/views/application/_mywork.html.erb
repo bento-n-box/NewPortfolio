@@ -5,11 +5,13 @@
 <div id="filter">
 	<ul class="filter">
 		<li>SELECT TAG:</li>
-	 <li class="current all"><a href="#">All</a></li>
-	  <li class="featured"><a href="#">Featured</a></li>
-	  <li class="Video"><a href="#">Development</a></li>
-	  <li class="Production"><a href="#">Motion</a></li>
-	  <li class="Development"><a href="#">Physical Computing</a></li>
+	<li class="featured"><a href="#">Featured</a></li>	 
+	<li class="dev"><a href="#">Development</a></li>
+	<li class="branding"><a href="#">Branding</a></li>
+	<li class="motion"><a href="#">Motion</a></li>
+	<li class="physical"><a href="#">Physical</a></li>
+	<li class="fun"><a href="#">Side Fun</a></li>
+	<li class="current all"><a href="#">All</a></li>
 	
 	  
 	  
@@ -17,16 +19,16 @@
 </div>
 	<div id="work">
 	<ul class="portfolio">
-		  <li data-id="id-1" data-type="Featured">
+		  <li data-id="id-1" data-type="featured branding" >
 		    <a href="images/hannah_yg.jpg" rel="prettyPhoto[portfolio]">
 		      <%= image_tag('hasbro.png') %>
 		    </a>
-		    <a class="project-meta" data-type="interactive">
+		    <a class="project-meta">
 				<h3 class="title">Hasbro Rebrand</h3>
 				<h5 class="categories">Interactive / Branding</h5>
 			</a>
 		  </li>
-		  <li data-id="id-2" data-type="Featured">
+		  <li data-id="id-2" data-type="featured motion dev">
 		    <a href="images/bianca_yg.jpg" rel="prettyPhoto[portfolio]">
 		      <%= image_tag('boulderboxsetsPBS.png') %>
 		    </a>
@@ -35,7 +37,7 @@
 				<h5 class="categories">Animation / Motion</h5>
 			</a>
 		  </li>
-		  <li data-id="id-3" data-type="Featured">
+		  <li data-id="id-3" data-type="featured dev">
 		    <a href="images/heather_yg.jpg" rel="prettyPhoto[portfolio]">
 		     <%= image_tag('occupationalist.png') %>
 		    </a>
@@ -44,16 +46,16 @@
 				<h5 class="categories">Development / Production</h5>
 			</a>
 		  </li>
-		   <li data-id="id-4" data-type="Production">
+		   <li data-id="id-4" data-type="branding dev">
 		    <a href="#" rel="prettyPhoto[portfolio]">
 		     <%= image_tag('rentadventure.png') %>
 		    </a>
 		    <a  class="project-meta">
-				<h3 class="title">Rental Car Platoform</h3>
+				<h3 class="title">Rental Car Platform</h3>
 				<h5 class="categories">Development / Strategy</h5>
 			</a>
 		  </li>
-		   <li data-id="id-4" data-type="Development">
+		   <li data-id="id-4" data-type="dev motion">
 		    <a href="#" rel="prettyPhoto[portfolio]">
 		     <%= image_tag('parralax.png') %>
 		    </a>
@@ -62,7 +64,7 @@
 				<h5 class="categories">Development</h5>
 			</a>
 		  </li>
-		  <li data-id="id-4" data-type="Video">
+		  <li data-id="id-4" data-type="motion">
 		    <a href="#" rel="prettyPhoto[portfolio]">
 		     <%= image_tag('kumite.png') %>
 		    </a>

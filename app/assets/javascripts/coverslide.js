@@ -6,10 +6,7 @@ var $window = $(window);
 				$('#cover').addClass("alt");
 				$('#cover img').addClass("alt");
 				$('.logo').addClass("alt");
-				$('nav').addClass("still");
-			
-
-				
+				$('nav').addClass("still");			
 			}	
 			if (pos < 1){
 				$('nav').removeClass("alt");	
@@ -17,9 +14,6 @@ var $window = $(window);
 				$('hgroup').removeClass("alt");			
 				$('.logo').removeClass("alt");
 				$('nav').removeClass("still");
-				
-			
-			
 			}		
 	});	
 	
