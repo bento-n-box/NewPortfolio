@@ -8,7 +8,7 @@ NewPortfolio::Application.routes.draw do
 	get "pages/index"
     	 
  	resources :posts 
-  	match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  	match 'contact' => 'contact#new', :as => 'contact#contact', :via => :get
 	#match 'contact' => 'contact#create', :as => 'contact', :via => :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
