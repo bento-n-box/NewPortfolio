@@ -1,6 +1,13 @@
 NewPortfolio::Application.routes.draw do
-   	root :to => 'contact#new'
-   	
+  	get "portfolio/occupationalist"
+  	get "portfolio/boulderboxset" 
+  	get "portfolio/rentadventure" 
+  	get "portfolio/hasbro" 
+  	get "portfolio/kumite" 
+	root :to => 'contact#new'
+	get "pages/index"
+    	 
+ resources :posts 
   	match 'contact' => 'contact#new', :as => 'contact', :via => :get
 	match 'contact' => 'contact#create', :as => 'contact', :via => :post
   # The priority is based upon order of creation:

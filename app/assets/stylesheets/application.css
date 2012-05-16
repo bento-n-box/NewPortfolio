@@ -13,8 +13,7 @@ html{
 	background: url("furley_bg.png") repeat fixed;
 }
 
-body, p, li, a{
-	font-family: "BentonSans", helvetica, arial;	}
+body, p, li, a{font-family: "BentonSans", helvetica, arial;	}
 
 
 section {padding: 100px 0 0 0; }
@@ -65,7 +64,7 @@ background: url("dvsup.png") repeat fixed;
 
 
 
-#wrapper{
+.wrapper{
 	width: 960px;
 	margin: 0px auto 0 auto;
 	position: relative;
@@ -101,7 +100,7 @@ width: 100%;
 
 }
 
-nav {
+.navhead {
 	position: fixed;
 	width: 100%;
 	top: 173px;
@@ -116,31 +115,34 @@ nav {
     z-index: 999;
   
 }
-nav.still{
+.navhead.still, .navheadfix{
 	position: fixed;
 	top: -980px;
-	padding-top: 900px;
+	padding: 900px 0 5px 0;
 	background: url("dvsup.png") repeat fixed;	
-	
+	text-align: center;
+	width: 100%;
+	  z-index: 999;
 }
 
 
-.navhead ul{
+.navhead ul, .navheadfix ul{
 	width: 815px;
 	margin: 0 auto;
 	padding-bottom: 10px;
 	position: relative;
 	width: 100%;
 }
-.navhead li{
+.navhead li, .navheadfix li{
 	display: inline;
 	width: 30px;
 	margin: 0px 40px;
 	font-family: "BentonSans-Bold";
 	
 }
-.navhead.still li a{
+.navhead.still li a, .navheadfix li a{
 	color: #fff;
+	font-family: "BentonSans-Bold";
 	-webkit-transition: all 0.8s ease-out;
     -moz-transition: all 0.8s ease-out;
     -ms-transition: all 0.8s ease-out;
@@ -150,7 +152,7 @@ nav.still{
    
 }
 .navhead li a{
-	font-family: "BentonSans-Bold";
+	
 	opacity: 0;
 	}
 
@@ -177,11 +179,11 @@ nav.still{
 
 
 
-.navhead ul li:nth-child(2){
+.navhead ul li:nth-child(2), .navheadfix ul li:nth-child(2){
 	margin-right: 100px;
 }
 
-.navhead ul li:nth-child(3){
+.navhead ul li:nth-child(3), .navheadfix ul li:nth-child(3){
 	margin-left: 100px;
 }
 
@@ -402,3 +404,60 @@ padding-bottom: 10px;
    _width:1em; _cursor:hand;
    margin:0; padding: 0.1em 0.5em 0.1em 0.3em;
    }
+
+/*-------- portfolio pages ------*/
+.wrapperportfolio{
+	width: 960px;
+	margin: 200px auto 100px auto;
+	position: relative;
+}
+
+.main{
+	float: right;
+	width:600px;
+	text-align: center;}
+	
+.main img{margin: 0 auto 30px auto; }
+
+.side{
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.side .titles p{
+	color: #000;
+	font-size: 14px;}
+.titles{
+border-bottom: 1px solid #ccc;
+padding-bottom: 20px;
+margin-bottom: 20px ;
+
+}
+.details{
+	margin: 20px 0;
+
+}
+.details h5{
+	float: left;
+	margin-right: 5px;
+	font-variant: bold;
+	line-height: 18px;
+	font-size: 18px;
+	
+}
+
+.details ul li{
+	display: inline;
+	padding: 5px 8px;
+	color:  #2c3f4d;  background: #b5d033; 
+	font-size: 10px;-webkit-border-radius: 10px;
+	font-weight: bold;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.side p{
+color: #666;
+font-size: 14px;
+}
