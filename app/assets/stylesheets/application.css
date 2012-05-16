@@ -40,11 +40,11 @@ a {text-decoration: none; color: #fff; }
 	max-width: 90%;	
 	padding: 330px 0 100px 00px;
 	margin: 0 auto;
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-       -o-transition: all 1s ease;
-          transition: all 1s ease;
+  -webkit-transition: all .8s ease-out;
+     -moz-transition: all 1s ease-out;
+      -ms-transition: all 1s ease-out;
+       -o-transition: all 1s ease-out;
+          transition: all 1s ease-out;
           z-index: 999;
           position:  static;
 }
@@ -102,11 +102,11 @@ width: 100%;
 	padding: 0px 0 5px 0;
 	text-align: center;
 	height: auto;
-  	-webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+  	-webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
     z-index: 999;
   
 }
@@ -138,11 +138,11 @@ width: 100%;
 .navhead.still li a, .navheadfix li a{
 	color: #fff;
 	font-family: "BentonSans-Bold";
-	-webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+	-webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
     opacity: 1;
    
 }
@@ -157,11 +157,11 @@ width: 100%;
 	margin: 0 auto;
 	width: 815px;
 	display: block;
-	 -webkit-transition: all 0.6s ease;
-     -moz-transition: all 0.6s ease;
-      -ms-transition: all 0.6s ease;
-       -o-transition: all 0.6s ease;
-          transition: all 0.6s ease;
+	 -webkit-transition: all 0.6s ease-out;
+     -moz-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+       -o-transition: all 0.6s ease-out;
+          transition: all 0.6s ease-out;
 
 }
 .logo{
