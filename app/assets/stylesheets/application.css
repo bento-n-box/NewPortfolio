@@ -146,8 +146,17 @@ width: 100%;
     opacity: 1;
    
 }
+.navhead.still li a:hover, .navheadfix li a:hover{
+border-bottom: solid 3px #fff;
+-webkit-transition: all 0s ease-out;
+    -moz-transition: all 0s ease-out;
+    -ms-transition: all 0s ease-out;
+    -o-transition: all 0s ease-out;
+    transition: all 0s ease-out;
+}
+
+
 .navhead li a{
-	
 	opacity: 0;
 	}
 
@@ -218,6 +227,7 @@ dt { margin-right: 0px; }
 	width: 295px;
 	height: 185px;
 	opacity: 1;
+	border-bottom: solid #CCC 1px;
 }
 
 #mywork #work {
@@ -455,6 +465,10 @@ margin-bottom: 20px ;
 .side p{
 color: #666;
 font-size: 14px;
+}
+.side a{
+color: #2c3f4d;
+ 
 }
 
 #thanks{
