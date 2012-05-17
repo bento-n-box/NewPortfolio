@@ -28,7 +28,7 @@ a {text-decoration: none; color: #fff; }
 	width: 100%;	
 	background: #000;
 	background: url("dvsup.png") repeat fixed;
-	 
+	 height: 1000px;
           z-index: 999;
           position: relative;
 }
@@ -257,7 +257,7 @@ dt { margin-right: 0px; }
 	color: #000;
 }
 
-#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
+#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after, #cover:after, #cover img:after{clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
 	/*-------------------About Me ----------------*/
 #about1 img{
 	height: 50px;
@@ -455,4 +455,11 @@ margin-bottom: 20px ;
 .side p{
 color: #666;
 font-size: 14px;
+}
+
+#thanks{
+	background: url("thanksemail.png")
+	height: 100%;
+	width: 100%;
+
 }

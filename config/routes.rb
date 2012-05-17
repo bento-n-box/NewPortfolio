@@ -9,7 +9,7 @@ NewPortfolio::Application.routes.draw do
     	 
  	resources :posts 
   	match 'contact' => 'contact#new', :as => 'contact', :via => :get
-	#match 'contact' => 'contact#create', :as => 'contact', :via => :post
+	match 'contact' => 'contact#create.html', :as => 'contact', :via => :post
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
