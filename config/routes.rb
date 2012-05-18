@@ -4,7 +4,9 @@ NewPortfolio::Application.routes.draw do
   	get "portfolio/rentadventure" 
   	get "portfolio/hasbro" 
   	get "portfolio/kumite" 
-  		get "portfolio/parallax" 
+  	get "portfolio/parallax" 
+  	get "portfolio/codeadvice"
+  	
 	root :to => 'contact#new'
 	get "pages/index"
     	 
