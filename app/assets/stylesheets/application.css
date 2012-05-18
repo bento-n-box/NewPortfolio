@@ -17,6 +17,8 @@ body, p, li, a{font-family: "BentonSans", helvetica, arial;	}
 
 
 section {padding: 100px 0 0 0; }
+section a{color: #000; }
+section a:hover{color: #ccc; }
 
 .header{ margin-bottom:  50px;}
 li {list-style: none;}
