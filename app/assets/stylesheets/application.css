@@ -145,16 +145,16 @@ width: 100%;
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out;
-    opacity: 1;
-   
+    opacity: 1; 
 }
+
 .navhead.still li a:hover, .navheadfix li a:hover{
 border-bottom: solid 3px #fff;
 -webkit-transition: all 0s ease-out;
-    -moz-transition: all 0s ease-out;
-    -ms-transition: all 0s ease-out;
-    -o-transition: all 0s ease-out;
-    transition: all 0s ease-out;
+-moz-transition: all 0s ease-out;
+-ms-transition: all 0s ease-out;
+-o-transition: all 0s ease-out;
+transition: all 0s ease-out;
 }
 
 
@@ -479,3 +479,52 @@ color: #2c3f4d;
 	width: 100%;
 
 }
+
+@media screen and (max-width: 480px), screen and (max-device-width: 480px), (-webkit-min-device-pixel-ratio: 1.5),  
+       (-o-min-device-pixel-ratio: 3/2),  
+       (min--moz-device-pixel-ratio: 1.5),  
+       (min-device-pixel-ratio: 1.5) {
+       
+       
+       #cover{
+	width: 100%;	
+	background: #000;
+	background: url("dvsup.png") repeat fixed;
+	 height: 1000px;
+          z-index: 999;
+          position: relative;
+	display: none;
+
+#cover img{	
+	
+          display: none;
+}
+
+
+.navhead {
+	position: fixed;
+	top: -980px;
+	padding: 900px 0 5px 0;
+	background: url("dvsup.png") repeat fixed;	
+	text-align: center;
+	width: 100%;
+	  z-index: 999;
+  
+}
+.navhead.still, .navheadfix{
+	position: fixed;
+	top: -980px;
+	padding: 900px 0 5px 0;
+	background: url("dvsup.png") repeat fixed;	
+	text-align: center;
+	width: 100%;
+	  z-index: 999;
+}
+
+       
+.navhead li a{
+	opacity: 1;
+	}
+       
+       
+       }
