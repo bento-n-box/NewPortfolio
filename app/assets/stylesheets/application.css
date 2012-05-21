@@ -480,6 +480,8 @@ color: #2c3f4d;
 
 }
 
+
+/* ------ Mobile ----- */
 @media screen and (max-width: 480px), screen and (max-device-width: 480px), (-webkit-min-device-pixel-ratio: 1.5),  
        (-o-min-device-pixel-ratio: 3/2),  
        (min--moz-device-pixel-ratio: 1.5),  
@@ -538,7 +540,7 @@ background: url("dvsup.png") repeat fixed;
 	.navhead.still li a, .navheadfix li a{
 	color: #fff;
 	font-family: "BentonSans-Bold";
-    opacity: 1; 
+    opacity: 1;  
 }
 
        
