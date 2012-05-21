@@ -520,8 +520,7 @@ background: url("dvsup.png") repeat fixed;
 	background: url("dvsup.png") repeat fixed;	
 	text-align: center;
 	width: 100%;
-	  z-index: 999;
-  
+	  z-index: 999; 
 }
 .navhead.still, .navheadfix{
 	position: fixed;
@@ -532,6 +531,8 @@ background: url("dvsup.png") repeat fixed;
 	width: 100%;
 	  z-index: 999;
 }
-
+.navhead li a{
+	opacity: 1;
+	}
        
        }
