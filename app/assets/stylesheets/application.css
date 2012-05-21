@@ -533,6 +533,13 @@ background: url("dvsup.png") repeat fixed;
 }
 .navhead li a{
 	opacity: 1;
+	font-family: "BentonSans-Bold";
 	}
+	.navhead.still li a, .navheadfix li a{
+	color: #fff;
+	font-family: "BentonSans-Bold";
+    opacity: 1; 
+}
+
        
        }
