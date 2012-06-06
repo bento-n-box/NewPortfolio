@@ -1,4 +1,3 @@
-if('jQuery' in window) {
 
 
 var $window = $(window);	
@@ -16,7 +15,7 @@ var $window = $(window);
 				$('nav').removeClass("still");
 			}		
 	});	
-	};
+
 
 
 			
