@@ -17,4 +17,10 @@ var $window = $(window);
 	});	
 
 
-};
+} else {
+		$('#cover').addClass("alt");
+				$('#cover img').addClass("alt");
+				$('nav').addClass("still");		
+
+
+}
