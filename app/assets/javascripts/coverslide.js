@@ -1,4 +1,4 @@
-
+ if ($.browser.webkit) {
 
 var $window = $(window);	
 		$window.bind('scroll', function(){ 	
@@ -17,5 +17,4 @@ var $window = $(window);
 	});	
 
 
-
-			
+};
