@@ -1,6 +1,6 @@
- if ($.browser.webkit) {
+if ($.browser.webkit) {
 
-var $window = $(window);	
+		var $window = $(window);	
 		$window.bind('scroll', function(){ 	
 		var pos = $(window).scrollTop();	
 		
@@ -14,13 +14,8 @@ var $window = $(window);
 				$('#cover img').removeClass("alt");
 				$('nav').removeClass("still");
 			}		
-	});	
+	})	
 
 
-} else {
-		$('#cover').addClass("alt");
-				$('#cover img').addClass("alt");
-				$('nav').addClass("still");		
 
-
-}
+} 

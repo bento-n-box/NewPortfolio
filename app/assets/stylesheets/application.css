@@ -43,10 +43,10 @@ a {text-decoration: none; color: #fff; }
 	padding: 330px 0 100px 00px;
 	margin: 0 auto;
   -webkit-transition: all .8s ease-out;
-     -moz-transition: all 1s ease-out;
-      -ms-transition: all 1s ease-out;
-       -o-transition: all 1s ease-out;
-          transition: all 1s ease-out;
+     -moz-transition: all .8s ease-out;
+      -ms-transition: all .8s ease-out;
+       -o-transition: all .8s ease-out;
+          transition: all .8s ease-out;
           z-index: 999;
           position:  static;
 }
