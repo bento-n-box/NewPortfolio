@@ -4,11 +4,11 @@ gem 'rails', '3.2.3'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-gem 'sqlite3'
+#gem 'sqlite3'
 gem "modernizr", "~> 2.5.3"
 
 
-# gem 'pg'
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
