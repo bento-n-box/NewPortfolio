@@ -15,7 +15,10 @@ html{
 
 body, p, li, a{font-family: "BentonSans", helvetica, arial;	}
 
+img{
+border: none;
 
+}
 section {padding: 100px 0 0 0; }
 section a{color: #000; }
 section a:hover{color: #ccc; }
@@ -30,17 +33,17 @@ a {text-decoration: none; color: #fff; }
 	width: 100%;	
 	background: #000;
 	background: url("dvsup.png") repeat fixed;
-	 height: 1000px;
-          z-index: 999;
-          position: relative;
+	height: 1500px;
+    z-index: 999;
+    position: relative;
 }
 #cover.alt{
 	height: 0%;
 }
 
 #cover img{	
-	max-width: 90%;	
-	padding: 330px 0 100px 00px;
+	max-width: 80%;	
+	padding: 350px 0 300px 00px;
 	margin: 0 auto;
   -webkit-transition: all .8s ease-out;
      -moz-transition: all .8s ease-out;
@@ -53,7 +56,7 @@ a {text-decoration: none; color: #fff; }
 
 
 #cover img.alt{
-background: url("dvsup.png") repeat fixed;	
+	background: url("dvsup.png") repeat fixed;	
 	max-width: 0%;	
 	padding: 100px 0;
 	margin: 0 auto;
@@ -164,7 +167,7 @@ transition: all 0s ease-out;
 
 .logos{
 	position: relative;
-	bottom: 305px;
+	bottom: 320px;
 	margin: 0 auto;
 	width: 815px;
 	display: block;
