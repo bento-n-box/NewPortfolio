@@ -6,7 +6,8 @@ NewPortfolio::Application.routes.draw do
   	get "portfolio/kumite" 
   	get "portfolio/parallax" 
   	get "portfolio/codeadvice"
-  	
+  	get 'contact/show'
+  	get 'contact/thanks'
 	root :to => 'contact#new'
 	get "pages/index"
     	 
