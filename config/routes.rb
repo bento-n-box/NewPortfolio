@@ -13,7 +13,7 @@ NewPortfolio::Application.routes.draw do
     	 
  	resources :contact
   	#match 'contact' => 'contact#new', :as => 'contact', :via => :get
-	match 'contact' => 'contact#thanks.html', :as => 'contact', :via => :contact
+	match 'contact' => 'contact/thanks.html', :as => 'contact', :via => :contact
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
