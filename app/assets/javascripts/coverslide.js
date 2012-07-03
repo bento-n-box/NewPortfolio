@@ -1,9 +1,12 @@
 
+$(window).load(function() {
 
-		var $window = $(window);	
-		$window.bind('scroll', function(){ 	
-		var pos = $(window).scrollTop();	
-		
+
+if ($.browser.webkit || $.browser.mozilla ) {
+			var $window = $(window);
+			$window.bind('scroll', function(){ 	
+			var pos = $(window).scrollTop();
+
 			if (pos > 2){
 				$('#cover').addClass("alt");
 				$('#cover img').addClass("alt");
@@ -15,7 +18,7 @@
 				$('nav').removeClass("still");
 			}		
 	})	
+} 
+	
 
-
-
- 
+});

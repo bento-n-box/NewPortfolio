@@ -1,19 +1,25 @@
 NewPortfolio::Application.routes.draw do
-  	get "portfolio/occupationalist"
-  	get "portfolio/boulderboxset" 
-  	get "portfolio/rentadventure" 
-  	get "portfolio/hasbro" 
-  	get "portfolio/kumite" 
-  	get "portfolio/parallax" 
-  	get "portfolio/codeadvice"
-  		get "portfolio/fatbot"
+  	resources :portfolio do
+  		collection do
+  			get "advocharge"
+  			get "occupationalist"
+		  	get "boulderboxset" 
+		  	get "rentadventure" 
+		  	get "hasbro" 
+		  	get "kumite" 
+		  	get "parallax" 
+		  	get "codeadvice"
+		  	get "fatbot"
+  		end
+  	end
+  
   	get 'contact/show'
   	get 'contact/thanks'
 	root :to => 'contact#new'
 	get "pages/index"
-    	 
+ 
  	resources :contact
-  	#match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  
 	match 'contact' => 'contact#thanks.html', :as => 'contact', :via => :contact
   # The priority is based upon order of creation:
   # first created -> highest priority.
