@@ -1,5 +1,5 @@
 
-$(window).load(function() {
+
 
 
 if ($.browser.webkit || $.browser.mozilla ) {
@@ -21,4 +21,3 @@ if ($.browser.webkit || $.browser.mozilla ) {
 } 
 	
 
-});

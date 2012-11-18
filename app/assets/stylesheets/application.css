@@ -219,7 +219,7 @@ dt { margin-right: 0px; }
 	color: #000;
 }
 
-#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after, #cover:after, #cover img:after{clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
+#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after, #cover:after, #cover img:after, {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
 	/*-------------------About Me ----------------*/
 #about1 img{
 	height: 50px;
@@ -465,13 +465,45 @@ color: #2c3f4d;
  
 }
 
-#thanks{
-	background: url("thanksemail.png")
-	height: auto;
-	width: 90%;
+.processWrapper {
+	width: 960px;
 	margin: 0 auto;
+	padding-top: 200px;
+	text-align: center;
 }
 
+.processWrapper section {
+	width: 300px;
+	padding: 0 10px;
+	float: left;
+}
+.processWrapper section p{
+	text-align: left;
+}
+.processWrapper figure img{
+	margin: 0 auto;
+	display: block;
+}
+
+.processWrapper figure img{
+	margin: 0 auto;
+	display: block;
+}
+
+.processWrapper figcaption h3{
+	background: #000;
+	padding: 15px;
+	margin: 0 auto;
+	color: #fff;
+}
+.processWrapper figcaption{
+	margin: 30px auto;
+}
+
+#processHeader{
+	border: 10px solid #000;
+	
+}
 
 /* ------ Mobile ----- */
 
@@ -582,91 +614,91 @@ hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
 		
 
 
-#cover img {
-	background: url("dvsup.png") repeat fixed;	
-	max-width: 0%;	
-	padding: 100px 0;
-	margin: 0 auto;
-} 
-
-hgroup{ width: 815px; margin: 0 auto;}
-
-hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
-
-
-#banner {
-	width: 100%;	
-	margin: -300px 0 0 0;
-	padding-bottom: 0;
-	background: #000;
-	text-align: center;
-	background: url("dvsup.png") repeat fixed;	
-}
-
-.navhead {
-	position: fixed;
-	width: 100%;
-	top: 173px;
-	padding: 0px 0 5px 0;
-	text-align: center;
-	height: auto;
-  	-webkit-transition: all 0.8s ease-out;
-    -moz-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out;
-    z-index: 999;
-}
- .navhead, .navheadfix{
-	position: fixed;
-	top: -980px;
-	padding: 900px 0 5px 0;
-	background: url("dvsup.png") repeat fixed;	
-	text-align: center;
-	width: 100%;
-	  z-index: 999;
-}
-
-
-.navhead ul,  .navheadfix ul{
-	width: 815px;
-	margin: 0 auto;
-	padding-bottom: 10px;
-	position: relative;
-	width: 50%;
-}
-.navhead li, .navheadfix li{
-	display: inline;
-	width: 30px;
-	margin: 0px 40px;
-	font-family: "BentonSans-Bold";
-}
-.navhead li a, .navheadfix li a{
-	color: #fff;
-	font-family: "BentonSans-Bold";
-	-webkit-transition: all 0.8s ease-out;
-    -moz-transition: all 0.8s ease-out;
-    -ms-transition: all 0.8s ease-out;
-    -o-transition: all 0.8s ease-out;
-    transition: all 0.8s ease-out;
-    opacity: 1; 
-}
-
-.navhead li a:hover, .navheadfix li a:hover{
-	border-bottom: solid 3px #fff;
-	-webkit-transition: all 0s ease-out;
-	-moz-transition: all 0s ease-out;
-	-ms-transition: all 0s ease-out;
-	-o-transition: all 0s ease-out;
-	transition: all 0s ease-out;
-}
-
-.logo{
-	position: relative;
-	bottom: -85px;
-	margin: 0 auto;
-	width: 815px;
-	display: block;
-}
+		#cover img {
+			background: url("dvsup.png") repeat fixed;	
+			max-width: 0%;	
+			padding: 100px 0;
+			margin: 0 auto;
+		} 
+		
+		hgroup{ width: 815px; margin: 0 auto;}
+		
+		hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
+		
+		
+		#banner {
+			width: 100%;	
+			margin: -300px 0 0 0;
+			padding-bottom: 0;
+			background: #000;
+			text-align: center;
+			background: url("dvsup.png") repeat fixed;	
+		}
+		
+		.navhead {
+			position: fixed;
+			width: 100%;
+			top: 173px;
+			padding: 0px 0 5px 0;
+			text-align: center;
+			height: auto;
+		  	-webkit-transition: all 0.8s ease-out;
+		    -moz-transition: all 0.8s ease-out;
+		    -ms-transition: all 0.8s ease-out;
+		    -o-transition: all 0.8s ease-out;
+		    transition: all 0.8s ease-out;
+		    z-index: 999;
+		}
+		 .navhead, .navheadfix{
+			position: fixed;
+			top: -980px;
+			padding: 900px 0 5px 0;
+			background: url("dvsup.png") repeat fixed;	
+			text-align: center;
+			width: 100%;
+			  z-index: 999;
+		}
+		
+		
+		.navhead ul,  .navheadfix ul{
+			width: 815px;
+			margin: 0 auto;
+			padding-bottom: 10px;
+			position: relative;
+			width: 50%;
+		}
+		.navhead li, .navheadfix li{
+			display: inline;
+			width: 30px;
+			margin: 0px 40px;
+			font-family: "BentonSans-Bold";
+		}
+		.navhead li a, .navheadfix li a{
+			color: #fff;
+			font-family: "BentonSans-Bold";
+			-webkit-transition: all 0.8s ease-out;
+		    -moz-transition: all 0.8s ease-out;
+		    -ms-transition: all 0.8s ease-out;
+		    -o-transition: all 0.8s ease-out;
+		    transition: all 0.8s ease-out;
+		    opacity: 1; 
+		}
+		
+		.navhead li a:hover, .navheadfix li a:hover{
+			border-bottom: solid 3px #fff;
+			-webkit-transition: all 0s ease-out;
+			-moz-transition: all 0s ease-out;
+			-ms-transition: all 0s ease-out;
+			-o-transition: all 0s ease-out;
+			transition: all 0s ease-out;
+		}
+		
+		.logo{
+			position: relative;
+			bottom: -85px;
+			margin: 0 auto;
+			width: 815px;
+			display: block;
+		}
        
        }

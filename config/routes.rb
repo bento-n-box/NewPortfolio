@@ -15,9 +15,10 @@ NewPortfolio::Application.routes.draw do
   
   	get 'contact/show'
   	get 'contact/thanks'
+  	
 	root :to => 'contact#new'
-	get "pages/index"
- 
+	
+	resources :process
  	resources :contact
   
 	match 'contact' => 'contact#thanks.html', :as => 'contact', :via => :contact
