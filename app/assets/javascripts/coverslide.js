@@ -1,6 +1,9 @@
 
-
-
+	
+$('img').click(function() {
+		console.log('hover');
+	 	$('.processWrapper figure img').animate({ 'margin-top': '300px'}, 300);	
+});
 
 if ($.browser.webkit || $.browser.mozilla ) {
 			var $window = $(window);
@@ -18,6 +21,5 @@ if ($.browser.webkit || $.browser.mozilla ) {
 				$('nav').removeClass("still");
 			}		
 	})	
-} 
+} ;
 	
-

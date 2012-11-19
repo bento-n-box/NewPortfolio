@@ -129,7 +129,7 @@ hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
 }
 
 .navhead.still li a:hover, .navheadfix li a:hover{
-	border-bottom: solid 3px #fff;
+	border-bottom: solid 3px #B5D033;
 	-webkit-transition: all 0s ease-out;
 	-moz-transition: all 0s ease-out;
 	-ms-transition: all 0s ease-out;
@@ -219,7 +219,7 @@ dt { margin-right: 0px; }
 	color: #000;
 }
 
-#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after, #cover:after, #cover img:after, {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
+#search:after, section:after, #lowerabout:after, #aboutinfo:after, #filter:after, #cover:after, #cover img:after {clear:both; content: " "; display: block; visibility :hidden; height: 0px;}
 	/*-------------------About Me ----------------*/
 #about1 img{
 	height: 50px;
@@ -467,8 +467,7 @@ color: #2c3f4d;
 
 .processWrapper {
 	width: 960px;
-	margin: 0 auto;
-	padding-top: 200px;
+	margin: 150px auto 1000px auto;
 	text-align: center;
 }
 
@@ -477,6 +476,10 @@ color: #2c3f4d;
 	padding: 0 10px;
 	float: left;
 }
+.processWrapper section:hover h3 {
+	color: #B5D033;
+	
+}
 .processWrapper section p{
 	text-align: left;
 }
@@ -484,7 +487,6 @@ color: #2c3f4d;
 	margin: 0 auto;
 	display: block;
 }
-
 .processWrapper figure img{
 	margin: 0 auto;
 	display: block;
@@ -492,16 +494,17 @@ color: #2c3f4d;
 
 .processWrapper figcaption h3{
 	background: #000;
-	padding: 15px;
+	padding: 8px 0;
 	margin: 0 auto;
 	color: #fff;
 }
 .processWrapper figcaption{
-	margin: 30px auto;
+	margin: 50px auto;
 }
 
-#processHeader{
-	border: 10px solid #000;
+#processHeader img{
+	width: 960px;
+	margin-bottom: 50px;
 	
 }
 
