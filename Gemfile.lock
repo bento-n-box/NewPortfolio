@@ -110,7 +110,7 @@ DEPENDENCIES
   jquery-rails
   modernizr (~> 2.5.3)
   pg
-  rails (= 3.2.3)
+  rails (~> 3.2)
   sass-rails (~> 3.2.3)
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)
