@@ -1,8 +1,5 @@
 class ProcessController < ApplicationController
-	  def index
-	  end
-
-  def create
-
+  def show
   end
+
 end
