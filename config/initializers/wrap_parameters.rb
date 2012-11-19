@@ -12,5 +12,3 @@ end
 ActiveSupport.on_load(:active_record) do
   self.include_root_in_json = false
 end
-
-ActionController::Base.wrap_parameters :format => [:json]
