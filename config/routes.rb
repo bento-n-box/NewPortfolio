@@ -14,7 +14,6 @@ NewPortfolio::Application.routes.draw do
   	end
   
   	get 'contact/show'
-  	get 'contact/thanks'
   	
 	root :to => 'contact#new'
 	
