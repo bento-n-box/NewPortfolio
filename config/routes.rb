@@ -10,17 +10,14 @@ NewPortfolio::Application.routes.draw do
 		  	get "parallax" 
 		  	get "codeadvice"
 		  	get "fatbot"
+		  	get "process"
   		end
   	end
   
   	get 'contact/show'
   	
 	root :to => 'contact#new'
-	resources :process do
-  		collection do
-  			get "process"
-  		end
-  	end
+
  	resources :contact
   
 	match 'contact' => 'contact#thanks.html', :as => 'contact', :via => :contact
