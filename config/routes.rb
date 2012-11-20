@@ -10,7 +10,7 @@ NewPortfolio::Application.routes.draw do
 		  	get "parallax" 
 		  	get "codeadvice"
 		  	get "fatbot"
-		  	get "process"
+		  	get "myprocess"
   		end
   	end
   
