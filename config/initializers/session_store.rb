@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-NewPortfolio::Application.config.session_store :cookie_store
+NewPortfolio::Application.config.session_store :cookie_store, :key => '_newportfolio_session'
 
 
 # Use the database for sessions instead of the cookie-based default,
