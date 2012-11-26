@@ -13,8 +13,6 @@ NewPortfolio::Application.routes.draw do
 		  	get "myprocess"
   		end
   	end
-  
-  	get 'contact/show'
   	
 	root :to => 'contact#new'
 
