@@ -1,6 +1,6 @@
 
 	
-$('img').click(function() {
+$('section').click(function() {
 		console.log('hover');
 	 	$('.processWrapper figure img').animate({ 'margin-top': '300px'}, 300);	
 });
