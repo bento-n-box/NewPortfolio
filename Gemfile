@@ -6,11 +6,12 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
-  gem 'heroku'
+ 
 end
 
 group :production do
   gem "pg"
+  gem 'heroku'
 end
 
 
