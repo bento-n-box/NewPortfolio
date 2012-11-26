@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem "rails", "~> 3.2"
 gem "modernizr", "~> 2.5.3"
 gem 'jquery-rails'
-gem 'heroku'
-gem 'thin'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
