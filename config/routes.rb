@@ -11,6 +11,16 @@ NewPortfolio::Application.routes.draw do
 		  	get "codeadvice"
 		  	get "fatbot"
 		  	get "myprocess"
+		  	get "puddingdrop"
+		  	get "applebees"
+		  	get "nodepong"
+		  	get "emails"
+		  	get "triscuit"
+		  	get "bdwc4"
+		  	get "katona"
+		  	get "papaspilar"
+		  	get "cpbgroup"
+		  	get "dominos"
   		end
   	end
   	

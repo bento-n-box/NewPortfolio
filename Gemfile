@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "rails", "~> 3.2"
+gem "rails"
 gem "modernizr", "~> 2.5.3"
 gem 'jquery-rails'
 
@@ -11,7 +11,6 @@ end
 
 group :production do
   gem "pg"
-
 end
 
 
