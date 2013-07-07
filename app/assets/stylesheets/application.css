@@ -154,6 +154,12 @@ hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
 	border-top: 1px #ccc solid;
 }
 
+#filter ul {
+	width: 665px !important;
+	margin: 0 auto;
+	overflow: hidden;	
+}
+
 #filter li{
 	display: inline-block;
 	list-style: none;
