@@ -34,7 +34,7 @@ a {text-decoration: none; color: #fff; }
 #cover{
 	width: 100%;	
 	background: #000;
-	background: url("dvsup.png") repeat fixed;
+	background: url("pinstriped_suit.jpg") repeat fixed;
 	height: 1500px;
     z-index: 999;
     position: relative;
@@ -59,7 +59,7 @@ a {text-decoration: none; color: #fff; }
 #cover.alt{ height: 0%;}
 
 #cover img.alt {
-	background: url("dvsup.png") repeat fixed;	
+	background: url("pinstriped_suit.jpg") repeat fixed;	
 	max-width: 0%;	
 	padding: 100px 0;
 	margin: 0 auto;
@@ -76,7 +76,7 @@ hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
 	padding-bottom: 0;
 	background: #000;
 	text-align: center;
-	background: url("dvsup.png") repeat fixed;	
+	background: url("pinstriped_suit.jpg") repeat fixed;	
 }
 
 .navhead {
@@ -97,7 +97,7 @@ hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
 	position: fixed;
 	top: -980px;
 	padding: 900px 0 5px 0;
-	background: url("dvsup.png") repeat fixed;	
+	background: url("pinstriped_suit.jpg") repeat fixed;	
 	text-align: center;
 	width: 100%;
 	  z-index: 999;
@@ -631,7 +631,7 @@ hgroup h1, hgroup h2{ text-indent: -999em; display: none; }
 			padding-bottom: 0;
 			background: #000;
 			text-align: center;
-			background: url("dvsup.png") repeat fixed;	
+			background: url("pinstriped_suit.jpg") repeat fixed;	
 		}
 		
 		.navhead {
