@@ -15,3 +15,4 @@
 //= require_tree 
 //= require modernizr
 //= require coverslide
+//= require videoplayer

@@ -21,6 +21,7 @@ NewPortfolio::Application.routes.draw do
 		  	get "papaspilar"
 		  	get "cpbgroup"
 		  	get "dominos"
+		  	get "tonightshow"
   		end
   	end
   	
