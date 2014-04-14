@@ -6,14 +6,14 @@ class ContactController < ApplicationController
 
   def create
     @message = Message.new(params[:message])
-    
     if @message.valid?
-      NotificationsMailer.new_message(@message).deliver
-      redirect_to(root_path, :notice => "Message was successfully sent.")
-    else
+      puts "message valid"
       flash.now.alert = "Please fill all fields."
-      render :new
+      NotificationsMailer.new_message(@message).deliver
+      redirect_to(:contact)
+    else #message invalid
+      flash.now.alert = "Please fill all fields."
+      redirect_to(root_path) 
     end
   end
-
 end

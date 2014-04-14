@@ -1,57 +1,61 @@
 
-	<%= render :partial => 'cover' %>
-	<%= render :partial => 'headermove' %>
-<div class="wrapper">			
-	<%= render :partial => 'mywork' %>
-	<%= render :partial => 'aboutme' %>
-	<section id="contact">
-			<%= image_tag("contactme.png", :class => 'header') %>
-			<div id="contactform">
-				<%= form_for @message, :url => contact_path do |form| %>
-				  <form-rowset class="field">
-				    <div class="form-row">
-				      <%= form.label :name %>
-				      <%= form.text_field :name %>
-				    </div>		    
-				    <div class="form-row">
-				      <%= form.label :email %>
-				      <%= form.text_field :email %>
-				    </div>
-				    <div class="form-row">
-				      <%= form.label :subject %>
-				      <%= form.text_field :subject %>
-				    </div>
-				    
-				    <div class="form-row">
-				      <%= form.label :body %>
-				      <%= form.text_area :body %>
-				    </div>
-				  </form-rowset>	  
-				  <form-rowset class="actions">
-				    <%= form.submit "Send Email", :class => 'button large regular green' %>
-				  </form-rowset>
-				<% end %>
-		 	</div>
-			<div class="contactinfo" >
-			  <aside>
-			  	<h2>Direct Contact</h2>
-			  	<ul class="social">
-			  		<li>Benton Rochester</li>
-			  		<li>Boulder, CO</li>
-			  		<li>hello@imbenton.com</li>
-			  	</ul>
-			  	<h2>Social</h2>
-			  		<ul class="social">
-			  		
-			  			<li><a href="http://twitter.com/im_benton">Twitter</a></li>
-			  			<li><a href="https://www.facebook.com/benton.rochester">Facebook</a></li>
-			  			<li><a href="http://www.linkedin.com/in/imbenton">LinkedIn</a></li>
-			  			<li><a href="https://github.com/rochestb">Git Hub</a></li>
-			  			
-			  		</ul>
-	<h2 id="checkin">Current Location<h2><h4> <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.foursquare.com%2Fhistory%2FNJBPXC3DCH2E15HBE3GNXNQZJL3OT5VZ.rss&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-</h4>  	
-			  	<iframe width="300" height="150" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=http:%2F%2Ffeeds.foursquare.com%2Fhistory%2FNJBPXC3DCH2E15HBE3GNXNQZJL3OT5VZ.kml%3Fcount%3D1&amp;ie=UTF8&amp;t=m&amp;z=19&amp;output=embed"></iframe><br /><small>
-	  		</div>
-		</section>
+  <%= render :partial => 'cover' %>
+  <%= render :partial => 'headermove' %>
+<div class="wrapper">     
+  <%= render :partial => 'mywork' %>
+  <%= render :partial => 'aboutme' %>
+  <section id="contact">
+      <%= image_tag("contactme.png", :class => 'header') %>
+      <div id="contactform">
+        <%= form_for @message, :url => contact_path do |form| %>
+          <form-rowset class="field">
+            <div class="form-row">
+              <%= form.label :name %>
+              <%= form.text_field :name %>
+            </div>        
+            <div class="form-row">
+              <%= form.label :email %>
+              <%= form.text_field :email %>
+            </div>
+            <div class="form-row">
+              <%= form.label :subject %>
+              <%= form.text_field :subject %>
+            </div>
+            
+            <div class="form-row">
+              <%= form.label :body %>
+              <%= form.text_area :body %>
+            </div>
+            <div class="form-row" style="display: none">
+              <%= form.text_area :catcher %>
+            </div>
+
+          </form-rowset>    
+          <form-rowset class="actions">
+            <%= form.submit "Send Email", :class => 'button large regular green' %>
+          </form-rowset>
+        <% end %>
+      </div>
+      <div class="contactinfo" >
+        <aside>
+          <h2>Direct Contact</h2>
+          <ul class="social">
+            <li>Benton Rochester</li>
+            <li>Boulder, CO</li>
+            <li>hello@imbenton.com</li>
+          </ul>
+          <h2>Social</h2>
+            <ul class="social">
+            
+              <li><a href="http://twitter.com/im_benton">Twitter</a></li>
+              <li><a href="https://www.facebook.com/benton.rochester">Facebook</a></li>
+              <li><a href="http://www.linkedin.com/in/imbenton">LinkedIn</a></li>
+              <li><a href="https://github.com/rochestb">Git Hub</a></li>
+              
+            </ul>
+  <h2 id="checkin">Current Location<h2><h4> <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.foursquare.com%2Fhistory%2FNJBPXC3DCH2E15HBE3GNXNQZJL3OT5VZ.rss&num=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
+</h4>   
+          <iframe width="300" height="150" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=http:%2F%2Ffeeds.foursquare.com%2Fhistory%2FNJBPXC3DCH2E15HBE3GNXNQZJL3OT5VZ.kml%3Fcount%3D1&amp;ie=UTF8&amp;t=m&amp;z=19&amp;output=embed"></iframe><br /><small>
+        </div>
+    </section>
 </div>

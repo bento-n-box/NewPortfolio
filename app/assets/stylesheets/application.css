@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "BentonSans";
-    src: url("fonts/BentonSans-Regular.otf") format("opentype");
-    font-family: "BentonSans-Bold";
-    src: url("fonts/BentonSans-Bold.otf") format("opentype");
-}
 
 
 /*-------- General -------- */
@@ -934,4 +928,10 @@ input {
 }
 video {
   width: 100%;
+}
+
+#thanks img {
+  display: block;
+  margin: 0 auto;
+
 }

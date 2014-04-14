@@ -1,6 +1,6 @@
 NewPortfolio::Application.routes.draw do
-  	resources :portfolio do
-  		collection do
+  resources :portfolio do
+    collection do
   			get "advocharge"
   			get "occupationalist"
 		  	get "boulderboxset" 
@@ -27,9 +27,14 @@ NewPortfolio::Application.routes.draw do
   	
 	root :to => 'contact#new'
 
- 	resources :contact
+ resources :contact do 
+    collection do
+     get "index"
+     get "thanks"
+   end
+  end
   
-	match 'contact' => 'contact#thanks.html', :as => 'contact', :via => :contact
+	match 'contact' => 'contact/thanks', :as => 'contact', :via => :contact
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -86,4 +91,9 @@ NewPortfolio::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+ 
+ 
+ 
+ 
+ 
 end
