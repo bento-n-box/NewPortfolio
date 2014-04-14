@@ -1,7 +1,8 @@
-ass Post < ActiveRecord::Base
+class Post < ActiveRecord::Base
   attr_accessible :content
   
-  end
+end
+
 class Message
 
   include ActiveModel::Validations
