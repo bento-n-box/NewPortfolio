@@ -31,4 +31,4 @@ class Message
     false
   end
 
-endnd
+end
