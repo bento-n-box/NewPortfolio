@@ -132,7 +132,7 @@ hgroup h2 {
     padding-bottom: 0;
     background: #000;
     text-align: center;
-    background: url("pinstriped_suit.jpg") repeat fixed;
+    background: url("pinstriped_suit.jpg") repeat;
 }
 
 .navhead {
@@ -155,7 +155,7 @@ hgroup h2 {
     position: relative;
     top: -980px;
     padding: 900px 0 5px 0;
-    background: url("pinstriped_suit.jpg") repeat fixed;
+    background: url("pinstriped_suit.jpg") repeat;
     text-align: center;
     width: 100%;
     z-index: 999;
