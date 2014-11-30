@@ -925,7 +925,13 @@ input {
   margin: 0 auto;
   width: 800px;
   height: 505px;
+  overflow: hidden;
 }
+
+#video video {
+    margin-top: -15px;
+}
+
 video {
   width: 100%;
 }

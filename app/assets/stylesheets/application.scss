@@ -928,11 +928,17 @@ input {
 }
 
 #video {
-  display: block
+  display: block;
   margin: 0 auto;
   width: 560px;
   height: 315px;
+  overflow: hidden;
 }
+
+#video video {
+    margin-top: -15px;
+}
+
 .video {
     width: 100%;
 }
