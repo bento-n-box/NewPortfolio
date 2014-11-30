@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree 
-//= require modernizr
+//= require_tree
 //= require coverslide
 //= require videoplayer
