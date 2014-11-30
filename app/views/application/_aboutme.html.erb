@@ -1,14 +1,18 @@
 <section id="aboutme" class="section">
   <%= image_tag("aboutme.png", :class => 'header') %>
    <div id="video">
-      <video preload="auto" loop="false" mute="true">
-      <source src='assets/digitalreel/digitalreel.mp4' type="video/mp4" >
-      <source src='assets/digitalreel/digitalreel.ogv' type="video/ogv" >
-      <source src='assets/digitalreel/digitalreel.webm' type="video/webm" >
-      Your browser does not support the <code>video</code> element.
-      </video>
+      <video  preload="auto" loop="false" mute="true" autoplay="autoplay" poster="assets/digitalreel/digitalreel.jpg" style="width:100%" title="1280">
+          <source src="assets/digitalreel/digitalreel.m4v" type="video/mp4" />
+          <source src="assets/digitalreel/digitalreel.webm" type="video/webm" />
+          <object type="application/x-shockwave-flash" data="assets/digitalreel/flashfox.swf" width="1280" height="720" style="position:relative;">
+            <param name="movie" value="assets/digitalreel/flashfox.swf" />
+            <param name="allowFullScreen" value="true" />
+            <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=assets/digitalreel/digitalreel.jpg&amp;src=digitalreel.m4v" />
+             <embed src="assets/digitalreel/flashfox.swf" width="1280" height="720" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=assets/digitalreel/digitalreel.jpg&amp;src=digitalreel.m4v"  allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+            <img alt="digitalreel" src="assets/digitalreel/digitalreel.jpg" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+          </object>
+        </video>
     </div>
-
 
   <div id="myimage">
     <%= image_tag("bentondc.jpeg", :size => "350x250") %>
